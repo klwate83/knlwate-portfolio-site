@@ -452,11 +452,21 @@ Submitted At: ${floatingLeadData.submittedAt}
 }
 
 floatingBotLauncher?.addEventListener("click", () => {
-  floatingBotPanel?.classList.add("open");
 
-  if (floatingBotWindow && floatingBotWindow.children.length === 0) {
-    startFloatingBot();
-  }
+    if (!floatingBotPanel) return;
+
+    const isOpen = floatingBotPanel.classList.contains("open");
+
+    if (isOpen) {
+        floatingBotPanel.classList.remove("open");
+        return;
+    }
+
+    floatingBotPanel.classList.add("open");
+
+    if (floatingBotWindow && floatingBotWindow.children.length === 0) {
+        startFloatingBot();
+    }
 });
 
 floatingBotClose?.addEventListener("click", () => {

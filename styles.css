@@ -697,9 +697,30 @@ textarea:focus {
   margin-top: 0;
 }
 
-.bot-reset {
-  margin-top: 14px;
-  width: 100%;
+.bot-reset{
+    width:100%;
+
+    margin-top:18px;
+
+    padding:14px 18px;
+
+    background:#f4f4f4;
+
+    color:#000000 !important;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.bot-reset:hover{
+    background:#ffffff;
 }
 
 /* Floating Portfolio Lead Bot */
@@ -892,9 +913,29 @@ textarea:focus {
   margin-top: 0;
 }
 
-.floating-bot-reset {
-  width: calc(100% - 28px);
-  margin: 0 14px 14px;
+.floating-bot-reset{
+    width:100%;
+    margin-top:18px;
+
+    padding:14px 18px;
+
+    background:#f4f4f4;
+
+    color:#000000 !important;
+
+    border:none;
+
+    border-radius:9px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+.floating-bot-reset:hover{
+    background:#ffffff;
 }
 
 @media (max-width: 900px) {
