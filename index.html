@@ -28,6 +28,7 @@
       <a href="#profile">Profile</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#bot-demo">Bot Demo</a>
       <a href="#experience">Experience</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
@@ -65,7 +66,6 @@
           <div class="corner-glow"></div>
 
           <p class="role-tag">Technology & Transformation Executive</p>
-        
 
           <p>
             Senior leader with experience across Conversational AI, QA strategy, BPO operations, business analysis, CX transformation, solution architecture, and enterprise digital delivery.
@@ -249,6 +249,60 @@
       </div>
     </section>
 
+    <section id="bot-demo" class="section-pad bot-demo-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Interactive Bot Demo</p>
+        <h2>Lead capture conversation flow.</h2>
+        <p>
+          A lightweight conversational flow that demonstrates how structured bot journeys can capture customer details, qualify interest, and confirm next steps.
+        </p>
+      </div>
+
+      <div class="bot-demo-grid reveal">
+        <article class="content-card bot-flow-card">
+          <h3>Flow Structure</h3>
+
+          <div class="flow-steps">
+            <div class="flow-step active">Greeting</div>
+            <div class="flow-step">Name Capture</div>
+            <div class="flow-step">Email Capture</div>
+            <div class="flow-step">Phone Capture</div>
+            <div class="flow-step">Interest Capture</div>
+            <div class="flow-step">Confirmation</div>
+          </div>
+
+          <p>
+            This demo is based on a simple lead generation flow: greet the visitor, collect contact details, understand the service interest, and confirm the request.
+          </p>
+        </article>
+
+        <article class="content-card bot-chat-card">
+          <div class="bot-chat-header">
+            <div>
+              <h3>Lead Capture Assistant</h3>
+              <p>Portfolio bot demo</p>
+            </div>
+            <span class="bot-status">Online</span>
+          </div>
+
+          <div class="bot-chat-window" id="botChatWindow"></div>
+
+          <form class="bot-input-row" id="botForm" novalidate>
+            <input
+              id="botInput"
+              type="text"
+              placeholder="Type your response..."
+              autocomplete="off"
+              aria-label="Lead capture bot input"
+            />
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+
+          <button class="btn ghost bot-reset" id="botReset" type="button">Restart demo</button>
+        </article>
+      </div>
+    </section>
+
     <section id="experience" class="section-pad timeline-section">
       <div class="section-heading reveal">
         <p class="eyebrow">Experience Timeline</p>
@@ -386,34 +440,80 @@
           <p>Reach out directly via WhatsApp, LinkedIn, email, or download my CV for a detailed view of my experience.</p>
 
           <a class="contact-link icon-link" href="https://wa.me/27615426276" target="_blank" rel="noopener" aria-label="Chat with Keletso on WhatsApp">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
-                <path d="M20.52 3.48A11.78 11.78 0 0 0 12.13 0C5.56 0 .2 5.35.2 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.25-1.64a11.9 11.9 0 0 0 5.88 1.5h.01c6.57 0 11.92-5.35 11.92-11.93 0-3.18-1.24-6.17-3.54-8.45ZM12.14 21.84h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.7.97.99-3.61-.24-.37a9.87 9.87 0 0 1-1.52-5.31c0-5.46 4.44-9.9 9.9-9.9a9.82 9.82 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.91-9.91 9.91Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.07c.15.2 2.09 3.19 5.06 4.47.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-              </svg>
-            </span>
+            <span class="contact-icon contact-icon-whatsapp" aria-hidden="true">☎</span>
             <span>WhatsApp</span>
           </a>
-          <a class="contact-link" href="mailto:klwate@live.co.za">Email Me</a>
+
+          <a class="contact-link icon-link" href="mailto:klwate@live.co.za" aria-label="Email Keletso">
+            <span class="contact-icon contact-icon-email" aria-hidden="true">✉</span>
+            <span>Email Me</span>
+          </a>
+
           <a class="contact-link icon-link" href="https://www.linkedin.com/in/keletso-lwate-57b7924b/" target="_blank" rel="noopener" aria-label="View Keletso's LinkedIn profile">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
-                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.32 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.54V9H7.1v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/>
-              </svg>
-            </span>
+            <span class="contact-icon contact-icon-linkedin" aria-hidden="true">in</span>
             <span>LinkedIn</span>
           </a>
-          <a class="contact-link" href="assets/images/cv/Keletso%20Lwate%20-%20CV%20-%202026%20-%2002.pdf" target="_blank" rel="noopener">Download Resume</a>
+
+          <a class="contact-link icon-link" href="assets/images/cv/Keletso%20Lwate%20-%20CV%20-%202026%20-%2002.pdf" target="_blank" rel="noopener" aria-label="Download Keletso Lwate resume">
+            <span class="contact-icon contact-icon-download" aria-hidden="true">↓</span>
+            <span>Download Resume</span>
+          </a>
         </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Keletso Lwate. Built as a custom VS Code executive portfolio website.</p>
+    <div>
+      <p>© <span id="year"></span> Keletso Lwate. All Rights Reserved.</p>
+      <p class="footer-credit">Built by Maendeleo Solutions</p>
+    </div>
+
     <a href="#home">Back to top</a>
   </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Floating Portfolio Lead Assistant -->
+  <div class="floating-lead-bot" id="floatingLeadBot">
+    <button class="floating-bot-launcher" id="floatingBotLauncher" type="button" aria-label="Open portfolio assistant">
+      <span class="floating-bot-pulse"></span>
+      <span class="floating-bot-icon">
+        <img src="assets/images/favicon/speechbubble.png" alt="Keletso Lwate AI assistant icon" />
+      </span>
+    </button>
+
+    <section class="floating-bot-panel" id="floatingBotPanel" aria-label="Portfolio lead assistant">
+      <div class="floating-bot-header">
+        <div>
+          <h3>Portfolio Assistant</h3>
+          <p>Hiring & consulting enquiry</p>
+        </div>
+
+        <button class="floating-bot-close" id="floatingBotClose" type="button" aria-label="Close portfolio assistant">
+          ×
+        </button>
+      </div>
+
+      <div class="floating-bot-window" id="floatingBotWindow"></div>
+
+      <form class="floating-bot-form" id="floatingBotForm" novalidate>
+        <input
+          id="floatingBotInput"
+          type="text"
+          placeholder="Type your response..."
+          autocomplete="off"
+          aria-label="Portfolio assistant input"
+        />
+
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+
+      <button class="btn ghost floating-bot-reset" id="floatingBotReset" type="button">
+        Restart conversation
+      </button>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
